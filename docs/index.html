@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>iKIP — Prototype</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="js/script.js" defer></script>
+</head>
+
+<body>
+  <main class="phone" id="phoneRoot">
+    
+    <!-- SECTION HAUTE -->
+    <header class="top-section">
+      <div class="status">97% •••</div>
+      <div class="center-time" id="centerTime">12:30</div>
+      <div class="clock-label">Horloge</div>
+    </header>
+
+    <!-- SECTION BASSE : APPLIS -->
+    <nav class="bottom-section">
+      <button class="app-icon" id="app-voip" title="VoIP">🌐</button>
+      <button class="app-icon" id="app-phone" title="Téléphone">📞</button>
+      <button class="app-icon" id="app-message" title="Messages">✉️</button>
+      <button class="app-icon" id="app-settings" title="Paramètres">⚙️</button>
+    </nav>
+
+    <!-- ÉCRAN DU TÉLÉPHONE -->
+    <section class="screen hidden" id="phoneScreen">
+      <button class="back-btn" id="btnBack">⏪</button>
+      <h2 class="screen-title">Contacts</h2>
+
+      <ul class="contacts-list" id="contactsList">
+        <li class="contact-item">Alice</li>
+        <li class="contact-item">Bob</li>
+        <li class="contact-item">Dr. Smith</li>
+        <li class="contact-item">Hotel Lobby</li>
+        <li class="contact-item">Nina</li>
+      </ul>
+
+      <!-- Options d'appel -->
+      <div class="call-options" id="callOptions">
+        <p id="callText">Sélectionnez un contact pour appeler.</p>
+        <div class="buttons">
+          <button class="comm-btn" data-type="gsm">GSM</button>
+          <button class="comm-btn" data-type="mesh">Mesh</button>
+          <button class="comm-btn" data-type="voip">VoIP</button>
+        </div>
+      </div>
+    </section>
+
+  </main>
+</body>
+</html>
